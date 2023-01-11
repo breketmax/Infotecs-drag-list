@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="list-app">
+      <div class="container">
+        <div class="loading-indicator" id="loadingBlock">
+          <img src="img/loading.gif" width="128" alt="Loading">
+          Loading...
+        </div>
+
+        <div class="control-panel">
+          <button class="sort-btn byPrice" onclick="sortByPrice()" >Sort by price</button>
+          <button class="sort-btn byRating" onclick="sortByRating()">Sort by rating</button>
+          <div class="show-more">
+            Show 
+          <select size="1" class="products-count" onchange="showMoreProducts(this)">
+            <option value="Select" disabled selected>Select</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+           products
+          </div>
+        </div>  
+        <div class="product-list"></div>
+        
+        
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
